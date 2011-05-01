@@ -1,0 +1,12 @@
+* { margin:0; padding:0; }
+
+body {
+	height: 99%;
+	width: 99%;
+}
+
+#container {
+	margin-top: 30px;
+	height: 99%;
+	width: 99%;
+}
