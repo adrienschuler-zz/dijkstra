@@ -1,0 +1,62 @@
+* { margin:0; padding:0; }
+
+#container {
+	height: 99%;
+	width: 99%;
+}
+
+#canvas {
+	border: 1px solid black;
+	height: 300px;
+	width: 400px;
+}
+#arrete
+{
+	text-align: center;	
+}
+
+#sommet
+{
+	text-align: center;		
+}
+
+#poid
+{
+	text-align: center;	
+}
+
+
+#dijkstra input:hover
+{
+	border: #999 1px solid;
+	background-color: #DDEEFF;
+}
+
+
+/* button submit */
+#dijkstra input[type="submit"]
+{
+	border: #DDEEFF 1px solid;
+	width: 50%;
+	
+}
+
+#dijkstra input[type="submit"]:hover
+{
+	background-color: #66CC33;
+	cursor: pointer;
+}
+
+#dijkstra input[type="reset"]
+{
+	border: #DDEEFF 1px solid;
+	width: 50%;
+}
+
+
+
+#th
+{
+	font-weight: bolder;
+	
+}

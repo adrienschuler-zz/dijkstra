@@ -29,7 +29,7 @@
 			
 			for (var j = 0; j < neighbors.length; j++) {
 				var v = neighbors[j],
-						d = this.distance[next] + dGraph.getWeight(dGraph.summits[next], v);
+					d = this.distance[next] + dGraph.getWeight(dGraph.summits[next], v);
 				
 				v = dGraph.summits.indexOf(v);
 				
@@ -44,7 +44,7 @@
 	
 	d.minVertex = function() {
 		var y = -1, // graph not connected, or no unvisited vertices
-				x = this.maxDistance;   
+			x = this.maxDistance;   
 		
 		for (var i = 0; i < this.distance.length; i++) {
 			if ( ! this.visited[i] && this.distance[i] < x ) {
@@ -57,9 +57,9 @@
 	
 	d.printPath = function(preceeding, start, summit) {
 		var path = [],
-				x = summit,
-				start = dGraph.summits[start];
-		
+			x = summit,
+			start = dGraph.summits[start];
+/*		
 		while (x !== start) {
 			if (x !== undefined) {
 				path.push(x.label);
@@ -68,6 +68,7 @@
 		}
 		path.push(start);
 		console.log('path', path);
+*/
 	}
 		
 	

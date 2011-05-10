@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+	/*
 	var summits = ['A', 'B', 'C', 'D', 'E', 'F'];
 	
 	dGraph.addSummit(summits);
@@ -19,5 +19,7 @@ $(document).ready(function() {
 	dCanvas.drawSummits();
 	
 	dGraph.getShortestPath();
+	*/
 	
+	dUserInput.bindEvents();
 });

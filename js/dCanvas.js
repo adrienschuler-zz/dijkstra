@@ -14,7 +14,7 @@
 	c.padding = 30;
 	
 	c.init = function() {
-		this.canvas = Raphael(50, 50, this.width, this.height);
+		this.canvas = Raphael("graph");
 	};
 	
 	c.drawSummits = function() {

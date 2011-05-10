@@ -1,23 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<title>DIJKSTRA</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.5.2.min.js"></script>
 	<script src="js/raphael-min.js"></script>
-  <script src="js/functions.js"></script>
-  <script src="js/dAnimation.js"></script>
-  <script src="js/dCanvas.js"></script>
-  <script src="js/dGraph.js"></script>
-  <script src="js/dDijkstra.js"></script>
-  <script src="js/main.js"></script>
+  	<script src="js/functions.js"></script>
+  	<script src="js/dAnimation.js"></script>
+  	<script src="js/dCanvas.js"></script>
+  	<script src="js/dGraph.js"></script>
+  	<script src="js/dDijkstra.js"></script>
+  	<script src="js/dUserInput.js"></script>
+  	<script src="js/main.js"></script>
 </head>
 <body>
 <div id="container">
 	
 	<noscript>Your browser does not support JavaScript !</noscript>
 
+	<div id="forms">
+		
+		<form method="post" action="#" id="edges_form">
+			<label for="edges_count">Nombre d'arrêtes</label>
+			<input type="number" name="edges_count" id="edges_count" min="0" max="50" value="5" autofocus>
+			<input type="button" value="Ok" id="edges_form_button">
+		</form>
+		
+		<form method="post" action="#" id="summits_form">
+			<table>
+				<thead>
+					<th>N°</th>
+					<th>Sommet</th>
+					<th>Poid</th>
+				</thead>
+				<tbody></tbody>
+				<tfoot>
+					<td colspan="3">
+						<input type="button" id="generate" value="Générer">
+						<input type="button" id="reset" value="Réinitialiser">
+					</td>
+				</tfoot>
+			</table>
+		</form>
+	
+	</div>
+	
+	<div id="graph"></div>
+	
 </div>
 </body>
 </html>
